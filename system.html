@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HunryMama Shop</title>
+
+    <link rel="stylesheet" href="system.css">
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+   
+
+    <header class="header">
+
+        
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo-container">
+            <img src="https://www.dropbox.com/scl/fi/7rf5tfhpn9c6a32wawrc9/logomamas.png?rlkey=23qf9cea6n23nq920umg0hjb8&st=uub0k9hs&dl=1" alt="Hungry MAMA Logo">
+            </a>
+
+
+        <a href="#" class="text-container"><h1>HUNGRY MAMA</h1>
+       
+        </a>
+
+
+
+        <nav class="navbar">
+
+            <a href="#">home</a>
+
+
+            <a href="#menu">Menu</a>
+
+            <a href="#review">review</a>
+
+            <a href="#Contact">Contacts Us</a>
+
+        </nav>
+
+        <div class="user-actions">
+            <button id="admin-login-btn" class="btn">Admin</button>
+
+            <div class="cart-container">
+                <a href="#cart-popup" class="btn" id="cart-btn">
+                    
+                    <img src="https://www.dropbox.com/scl/fi/ig93i7zhck3rul7uzqtne/cart.png?rlkey=7821z5oxdstl8pr32uc02v8oq&st=5qdnm714&dl=1" alt="Cart" class="cart-icon">
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+<!-- Admin Login Popup -->
+<div id="admin-login-popup" class="popup">
+    <div class="popup-content">
+        <h2>Admin Login</h2>
+        <form id="admin-login-form">
+            <input type="text" id="admin-username" placeholder="Admin Username" required>
+            <input type="password" id="admin-password" placeholder="Admin Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <button id="close-admin-login">Close</button>
+    </div>
+</div>
+
+
+ <!-- Banner  -->
+ <div class="hm-swiper swiper">
+    <div class="hm-swiper-wrapper swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="hm-swiper-slide swiper-slide">
+            <div class="hm-dots-overlay"></div>
+            <div class="hm-orange-circle hm-circle-1"></div>
+            <div class="hm-orange-circle hm-circle-2"></div>
+            <div class="hm-slide-content">
+                <img src="Image/hmm.png" alt="Weekday's Special - Saucer Sandwich and Drinks">
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="hm-swiper-slide swiper-slide">
+            <div class="hm-dots-overlay"></div>
+            <div class="hm-orange-circle hm-circle-1"></div>
+            <div class="hm-orange-circle hm-circle-2"></div>
+            <div class="hm-slide-content">
+                <img src="Image/hm.png" alt="Welcome to Hungry Mama">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- Order Now Button -->
+    <button class="hm-order-now-btn">Order Now</button>
+</div>
+
+
+
+  <!-- MENU -->
+
+  <section class="menu" id="menu">
+
+    <h1 class="heading">our menu <span>Saucer Sandwich, Shake & Fruit Soda</span></h1>
+    <div class="box-container">
+
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            
+
+            <div class="content">
+
+                <h3>Saucer Sandwich - Cheese</h3>
+                <p>Choose</p>
+                <span>
+                    <label>
+                      <input type="radio" name="size" value="Sandwich - Cheese" data-price="20">
+                      ₱20.00 
+                     </label>
+                
+                </span>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            <div class="content">
+                
+                <h3>Saucer Sandwich - Egg</h3>
+                <p>Choose</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Egg regular" data-price="16">
+                      ₱16.00 - regular
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Egg w/cheese" data-price="25">
+                      ₱25.00W/cheese
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+ 
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Saucer Sandwich - Corned Beef</h3>
+                <p>Choose</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Corned Beef regular" data-price="20">
+                      ₱20.00 - regular
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Corned Beef w/cheese" data-price="25">
+                      ₱25.00W/cheese
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Saucer Sandwich - Tuna</h3>
+                <p>Choose</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Tuna regular" data-price="20">
+                      ₱20.00 - regular
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Tuna w/cheese" data-price="25">
+                      ₱25.00W/cheese
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Saucer Sandwich - Ham</h3>
+                <p>Choose</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Ham regular" data-price="20">
+                      ₱20.00 - regular
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Ham w/cheese" data-price="25">
+                      ₱25.00W/cheese
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Saucer Sandwich - HotDog</h3>
+                <p>Choose</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - HotDog regular" data-price="20">
+                      ₱20.00 - regular
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - HotDog w/cheese" data-price="25">
+                      ₱25.00W/cheese
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+                
+            </div>
+
+        </a>
+
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/zh5ny3bvum63midt9ck7u/saucerpic-removebg-preview.png?rlkey=yzutwn0l3pio3cn0x5kvga9et&st=mbxzc2o8&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Saucer Sandwich - Burger</h3>
+                <p>Choose</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Burger regular" data-price="20">
+                      ₱20.00 - regular
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Sandwich - Burger w/cheese" data-price="25">
+                      ₱25.00W/cheese
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+        </a>
+
+
+
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/liz7s2wlsrabqqftel56s/avocadoshake.png?rlkey=0aw0dwsnarnr0tnta9y3zemtj&st=h7y1369m&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Shake Drink - Avocado</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Avocado 12oz" data-price="20">
+                      ₱20.00 - 12oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Avocado 16oz" data-price="28">
+                      ₱28.00 - 16oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+
+
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/xppm219fg5kp0wj0xtzfw/pandan-removebg.png?rlkey=ooh7s0dtr4xq0v6s6xgm8krb7&st=q4oxqlin&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Shake Drink - Buko Pandan</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Buko Pandan 12oz" data-price="20">
+                      ₱20.00 - 12oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Buko Pandan 16oz" data-price="28">
+                      ₱28.00 - 16oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+        
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/oe51zp44mu0nm4wdpd86f/chocokissesshake.png?rlkey=l4xsna81srej7939inpga8lt6&st=dk90z0av&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Shake Drink - Choco Kisses</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Choco Kisses 12oz" data-price="20">
+                      ₱20.00 - 12oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Choco Kisses 16oz" data-price="28">
+                      ₱28.00 - 16oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/effi02q245zlnrnbk7xsu/oreoshake.png?rlkey=9kficuv09kgn0rhlrnind3umv&st=tlhjq4kn&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Shake Drink - Cookies & Cream</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Cookies & Cream 12oz" data-price="20">
+                      ₱20.00 - 12oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Cookies & Cream 16oz" data-price="28">
+                      ₱28.00 - 16oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/k1qwy18vo1liduqvl1bi7/ubeshake.png?rlkey=msafqagaeabpmg7k0e1m400ru&st=lg33kl2m&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Shake Drink - Ube</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Ube 12oz" data-price="20">
+                      ₱20.00 - 12oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Ube 16oz" data-price="28">
+                      ₱28.00 - 16oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/sdg7b4l8rkg8c302fhnov/mangoshake.png?rlkey=ka6se4micr0uj9wcfz0y52c7a&st=vwh9coce&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Shake Drink - Mango</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Mango 12oz" data-price="20">
+                      ₱20.00 - 12oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Shake - Mango 16oz" data-price="28">
+                      ₱28.00 - 16oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/d34o89rj9uev8ntfnp8z2/greenapple-removebg.png?rlkey=nw6d57ct862w9s7qk7awrmi6l&st=0rdxmd9i&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - GreenApple</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - GreenApple 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - GreenApple 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+        </a>
+
+
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/7009v3zkpb1eerv12gqkd/lemon-removebg.png?rlkey=zvcfvjspcj8ipzfsr90q5eixg&st=p3eilbgu&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Lemon</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Lemon 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label>
+                      <input type="radio" name="size" value="Soda - Lemon 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                      <label class="radio-option">
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/ak9p6mm6od3n4v1eixxs8/blueberry-removebg.png?rlkey=uplyqik45lonmfbuvl0rc28n4&st=ld7w1ggf&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Blueberry</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Blueberry 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Blueberry 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/7e7takfec6zjxzq1d0an7/strawberry-removebg.png?rlkey=9z7p4ewxe78n2wtb56a366f01&st=8kam77n3&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Strawberry</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Strawberry 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Strawberry 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/ec9y8uxjrs1g2qm11iapp/bubblegum.png?rlkey=qmk3krw3uc9zuq4x1nr6s3c01&st=kidi567i&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Bubble Gum</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Bubble Gum 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Bubble Gum 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+
+            </div>
+
+        </a>
+
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/6apl26249bl8ogw1nh94l/watermelon-removebg.png?rlkey=0nwyl4a7ooxgyw7k1ubrrofzt&st=9n1cf630&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Water Melon</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Water Melon 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Water Melon 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/a9zvy7wgjwxbzpzqvdyto/kiwi.png?rlkey=0cey2tu0zimsu5j50fhz46w3s&st=ql8aiwfh&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Kiwi</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Kiwi 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Kiwi 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/tf1avq7o24qbl2kdh9s1y/respberry-removebg.png?rlkey=y78ejfbwxl2tsdbuxaj4k33oe&st=7qm3no33&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Respberry</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Respberry 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Respberry 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/ksfvzs76pojmqpxmqa8qb/grape-removebg.png?rlkey=jh7ev2bk5ul1t1btnm43soofz&st=f5af78hk&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Grape</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Grape 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Grape 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </a>
+
+        <a class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/wzpuk19z4j2hxwt46uthd/rootbeer.png?rlkey=rqyfra832l7i8u25onwtd5ubh&st=3t436my0&dl=1" alt="">
+
+            <div class="content">
+
+                <h3>Fruit Soda - Rootbeer</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Rootbeer 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Rootbeer 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.dropbox.com/scl/fi/br7luxj3gsquwspu26kt4/Best_Sellers.png?rlkey=fd1h3e62n11fthwct0vfw56xj&st=fofegpkc&dl=1" class="star" alt="Star Image">
+                <div class="product-info">
+                </div>
+            </div>
+
+        </a>
+
+        <a  class="box">
+
+            <img src="https://www.dropbox.com/scl/fi/o966c558dycp814btpkd3/melon.png?rlkey=sidu7ht6x3jek4j3mtsveun6u&st=1yf9vanc&dl=1" alt="">
+        
+            <div class="content">
+        
+                <h3>Fruit Soda - Melon</h3>
+                <p>Choose Size</p>
+                <div class="radio-group">
+                <span>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Melon 16oz" data-price="39">
+                      ₱39.00 - 16oz
+                    </label>
+                    <label class="radio-option">
+                      <input type="radio" name="size" value="Soda - Melon 22oz" data-price="49">
+                      ₱49.00 - 22oz
+                    </label>
+                </span>
+            </div>
+                <button class="btn add-to-cart">Add to Cart</button>    
+        
+            </div>
+        
+        </a>
+        
+
+    </div>
+    </section>
+
+
+    <div id="cartPopup" class="cart-popup">
+         <!-- ... other header content ... -->
+    
+        <div class="cart-content">
+            <div id="customerInfo">
+            </div>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+            <h2>Your Cart (<span id="cart-count-popup">0</span> items)</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: ₱<span id="cartTotal">0.00</span></p>
+            <button id="closeCart">Close</button>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Add this new div for the order confirmation -->
+    <div id="orderConfirmation" class="order-confirmation" style="display: none;">
+        <h2>Order Confirmation</h2>
+        <p>Thank you for your order, <span id="confirmationName"></span>!</p>
+        <p>Your order number is: <span id="orderNumber"></span></p>
+        <p>Please wait until your number is called to collect your order.</p>
+        <button id="closeConfirmation">Close</button>
+    </div>
+
+
+    <!-- REVIEW -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">reviews <span>what people says</span></h1>
+
+
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <i class="fas fa-quote-right"></i>
+
+                    <img src="https://www.dropbox.com/scl/fi/yyawivtcnsx7ewa1kx583/bgpic.jpg?rlkey=9axy1e2a5l3ifcoyqbpbduaeb&st=txx2ad6o&dl=1" alt="">
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <p>...........</p>
+
+                    <h3>James</h3>
+
+                    <span>satisfied client</span>
+
+                </div>
+
+
+
+                <div class="swiper-slide box">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <i class="fas fa-quote-right"></i>
+
+                    <img src="https://www.dropbox.com/scl/fi/yyawivtcnsx7ewa1kx583/bgpic.jpg?rlkey=9axy1e2a5l3ifcoyqbpbduaeb&st=txx2ad6o&dl=1" alt="">
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <p>...........</p>
+
+                    <h3>Chris</h3>
+
+                    <span>satisfied client</span>
+
+                </div>
+
+
+
+                <div class="swiper-slide box">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <i class="fas fa-quote-right"></i>
+
+                    <img src="https://www.dropbox.com/scl/fi/yyawivtcnsx7ewa1kx583/bgpic.jpg?rlkey=9axy1e2a5l3ifcoyqbpbduaeb&st=txx2ad6o&dl=1" alt="">
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <p>...........</p>
+
+                    <h3>Josen</h3>
+
+                    <span>satisfied client</span>
+
+                </div>
+
+
+
+                <div class="swiper-slide box">
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <i class="fas fa-quote-right"></i>
+
+                    <img src="https://www.dropbox.com/scl/fi/yyawivtcnsx7ewa1kx583/bgpic.jpg?rlkey=9axy1e2a5l3ifcoyqbpbduaeb&st=txx2ad6o&dl=1" alt="">
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <p>...........</p>
+
+                    <h3>Rjay</h3>
+
+                    <span>satisfied client</span>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BOOK -->
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <section class="Branches" id="Branches">
+
+                <h3>our branch</h3>
+
+                <a>
+                    <img src="Image/loc_icon.png" alt="" class="location-icon"> Poblacion Muntinlupa City
+                    
+                </a>
+
+            </section>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <h3>quick links</h3>
+
+                <a href="#"><i class="fas fa-arrow-right"></i> home</a>
+
+                <a href="#about.html"><i class="fas fa-arrow-right"></i> about</a>
+
+                <a href="#menu"><i class="fas fa-arrow-right"></i> Best Seller</a>
+
+                
+
+            </div>
+
+
+
+            <div class="box">
+
+                <section class="Contact" id="Contact">
+
+                <h3>contact info</h3>
+
+                <a ><i class="fas fa-phone"></i> +63 906-361-5293</a>
+
+                <a><i class="fas fa-phone"></i> +63 947-544-2007</a>
+
+                <a><i class="fas fa-envelope"></i> HungryMama@gmail.com</a>
+
+            </section>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <h3>Social Links</h3>
+
+                <a ><i class="fab fa-facebook-f"></i> facebook</a>
+
+                <a ><i class="fab fa-instagram"></i> instagram</a>
+
+                
+
+            </div>
+
+        </div>
+
+
+
+       
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+    
+
+    <script src="system.js"></script>
+
+    
+    <style>
+      p{
+        font-family: Times, sans-serif;
+      }
+    </style>
+    
+    <footer class="footers">
+        <p>© 2024, HUNGRY MAMA ·    
+            <a href="terms.html" style="color: rgb(104, 100, 100); text-decoration: none; font-family: Times, sans-serif;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">Terms of Service &middot;</a>
+            <a href="about.html" style="color: rgb(104, 100, 100); text-decoration: none; font-family: Times, sans-serif;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">About us</a>
+        </p>
+    </footer>
+     
+
+</body>
+
+
+
+</html>
+                    
